@@ -1,0 +1,1774 @@
+[
+  {
+    "id": "INC-0002",
+    "user": "user19",
+    "level": "High",
+    "score": 100,
+    "start": "2025-03-17 10:04:50",
+    "end": "2025-03-17 10:08:49",
+    "confidence": 1.0,
+    "stages": [
+      "Probe",
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (100). Without failure burst \u2192 High (70), still High. Minimal evidence: {failure_burst, fail_then_success, mfa_change}.",
+    "action": "Open a case",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-17 10:04:50",
+        "points": 30.0,
+        "rows": [
+          1874,
+          1875,
+          1877,
+          1878,
+          1879,
+          1881
+        ],
+        "detail": "6 failed logins, each within 10 min of the last"
+      },
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-17 10:05:49",
+        "points": 25,
+        "rows": [
+          1874,
+          1875,
+          1877,
+          1878,
+          1879,
+          1881,
+          1882
+        ],
+        "detail": "6 failures, then success from BD on atk-ATK-020"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-17 10:05:49",
+        "points": 12.8,
+        "rows": [
+          1882
+        ],
+        "detail": "surprise 12.3 bits: device 6.1, hour 3.8, country 6.0, ASN 6.1 (geo discounted: VPN/known device)"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-17 10:08:49",
+        "points": 25,
+        "rows": [
+          1884,
+          1882
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0014",
+    "user": "user03",
+    "level": "High",
+    "score": 100,
+    "start": "2025-03-18 02:33:10",
+    "end": "2025-03-18 02:42:30",
+    "confidence": 1.0,
+    "stages": [
+      "Probe",
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (100). Without failure burst \u2192 High (91), still High. Minimal evidence: {failure_burst, fail_then_success, mfa_change}.",
+    "action": "Open a case",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-18 02:33:10",
+        "points": 27.5,
+        "rows": [
+          2060,
+          2061,
+          2062,
+          2063,
+          2064
+        ],
+        "detail": "5 failed logins, each within 10 min of the last"
+      },
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-18 02:33:30",
+        "points": 25,
+        "rows": [
+          2060,
+          2061,
+          2062,
+          2063,
+          2064,
+          2065
+        ],
+        "detail": "5 failures, then success from ID on atk-ATK-010"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-18 02:33:30",
+        "points": 25.0,
+        "rows": [
+          2065
+        ],
+        "detail": "surprise 26.8 bits: device 6.4, hour 7.6, country 6.4, ASN 6.4"
+      },
+      {
+        "name": "new_country",
+        "stage": "Breach",
+        "time": "2025-03-18 02:33:30",
+        "points": 20,
+        "rows": [
+          2065
+        ],
+        "detail": "first login from ID"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-18 02:42:30",
+        "points": 25,
+        "rows": [
+          2066,
+          2065
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0015",
+    "user": "user44",
+    "level": "High",
+    "score": 100,
+    "start": "2025-03-18 09:35:33",
+    "end": "2025-03-18 09:45:53",
+    "confidence": 1.0,
+    "stages": [
+      "Probe",
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (100). Without failure burst \u2192 High (89), still High. Minimal evidence: {failure_burst, fail_then_success, mfa_change}.",
+    "action": "Open a case",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-18 09:35:33",
+        "points": 27.5,
+        "rows": [
+          2089,
+          2090,
+          2091,
+          2092,
+          2093
+        ],
+        "detail": "5 failed logins, each within 10 min of the last"
+      },
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-18 09:35:53",
+        "points": 25,
+        "rows": [
+          2089,
+          2090,
+          2091,
+          2092,
+          2093,
+          2094
+        ],
+        "detail": "5 failures, then success from NG on atk-ATK-009"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-18 09:35:53",
+        "points": 23.0,
+        "rows": [
+          2094
+        ],
+        "detail": "surprise 22.1 bits: device 6.3, hour 3.2, country 6.3, ASN 6.3"
+      },
+      {
+        "name": "new_country",
+        "stage": "Breach",
+        "time": "2025-03-18 09:35:53",
+        "points": 20,
+        "rows": [
+          2094
+        ],
+        "detail": "first login from NG"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-18 09:45:53",
+        "points": 25,
+        "rows": [
+          2097,
+          2094
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0022",
+    "user": "user03",
+    "level": "High",
+    "score": 100,
+    "start": "2025-03-20 00:29:15",
+    "end": "2025-03-20 00:30:45",
+    "confidence": 1.0,
+    "stages": [
+      "Probe",
+      "Breach"
+    ],
+    "headline": "High (100). Without failure burst \u2192 Medium (48). Minimal evidence: {failure_burst, fail_then_success}.",
+    "action": "Open a case",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-20 00:29:15",
+        "points": 45,
+        "rows": [
+          2447,
+          2448,
+          2449,
+          2450,
+          2451,
+          2452,
+          2453,
+          2454,
+          2455,
+          2456,
+          2457,
+          2458,
+          2459,
+          2460,
+          2461,
+          2462,
+          2463,
+          2464,
+          2465,
+          2466,
+          2467,
+          2468,
+          2469,
+          2470,
+          2471,
+          2472,
+          2473,
+          2474,
+          2475,
+          2476
+        ],
+        "detail": "30 failed logins, each within 10 min of the last"
+      },
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-20 00:30:45",
+        "points": 25,
+        "rows": [
+          2447,
+          2448,
+          2449,
+          2450,
+          2451,
+          2452,
+          2453,
+          2454,
+          2455,
+          2456,
+          2457,
+          2458,
+          2459,
+          2460,
+          2461,
+          2462,
+          2463,
+          2464,
+          2465,
+          2466,
+          2467,
+          2468,
+          2469,
+          2470,
+          2471,
+          2472,
+          2473,
+          2474,
+          2475,
+          2476,
+          2477
+        ],
+        "detail": "30 failures, then success from BR on atk-ATK-002"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-20 00:30:45",
+        "points": 25.0,
+        "rows": [
+          2477
+        ],
+        "detail": "surprise 27.4 bits: device 6.6, hour 7.7, country 6.6, ASN 6.6"
+      },
+      {
+        "name": "new_country",
+        "stage": "Breach",
+        "time": "2025-03-20 00:30:45",
+        "points": 20,
+        "rows": [
+          2477
+        ],
+        "detail": "first login from BR"
+      }
+    ]
+  },
+  {
+    "id": "INC-0043",
+    "user": "user41",
+    "level": "High",
+    "score": 100,
+    "start": "2025-03-23 02:04:14",
+    "end": "2025-03-23 02:09:08",
+    "confidence": 0.13,
+    "stages": [
+      "Probe",
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (100). Without failure burst \u2192 Medium (62). Without fail-then-success \u2192 Medium (69). Without MFA change \u2192 Medium (69). Minimal evidence: {failure_burst, fail_then_success, mfa_change}.",
+    "action": "Force re-authentication",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-23 02:04:14",
+        "points": 30.0,
+        "rows": [
+          3005,
+          3006,
+          3007,
+          3008,
+          3009,
+          3010
+        ],
+        "detail": "6 failed logins, each within 10 min of the last"
+      },
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-23 02:05:08",
+        "points": 25,
+        "rows": [
+          3005,
+          3006,
+          3007,
+          3008,
+          3009,
+          3010,
+          3011
+        ],
+        "detail": "6 failures, then success from NG on atk-ATK-026"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-23 02:09:08",
+        "points": 25,
+        "rows": [
+          3012,
+          3011
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0047",
+    "user": "user08",
+    "level": "High",
+    "score": 100,
+    "start": "2025-03-23 19:26:00",
+    "end": "2025-03-23 19:29:42",
+    "confidence": 1.0,
+    "stages": [
+      "Probe",
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (100). Without failure burst \u2192 High (74), still High. Minimal evidence: {failure_burst, fail_then_success, mfa_change}.",
+    "action": "Open a case",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-23 19:26:00",
+        "points": 30.0,
+        "rows": [
+          3117,
+          3118,
+          3119,
+          3120,
+          3121,
+          3122
+        ],
+        "detail": "6 failed logins, each within 10 min of the last"
+      },
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-23 19:26:42",
+        "points": 25,
+        "rows": [
+          3117,
+          3118,
+          3119,
+          3120,
+          3121,
+          3122,
+          3123
+        ],
+        "detail": "6 failures, then success from AR on atk-ATK-018"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-23 19:26:42",
+        "points": 18.2,
+        "rows": [
+          3123
+        ],
+        "detail": "surprise 17.4 bits: device 6.8, hour 7.9, country 6.8, ASN 6.8 (geo discounted: VPN/known device)"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-23 19:29:42",
+        "points": 25,
+        "rows": [
+          3124,
+          3123
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0005",
+    "user": "user05",
+    "level": "High",
+    "score": 92,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:22:09",
+    "confidence": 1.0,
+    "stages": [
+      "Probe",
+      "Breach"
+    ],
+    "headline": "High (92). Without password spray \u2192 Low (33). Minimal evidence: {password_spray, anomalous_success}.",
+    "action": "Force password reset",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1933,
+          1934
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-17 12:22:09",
+        "points": 23.2,
+        "rows": [
+          1946
+        ],
+        "detail": "surprise 22.2 bits: device 6.4, hour 3.1, country 6.4, ASN 6.4"
+      },
+      {
+        "name": "new_country",
+        "stage": "Breach",
+        "time": "2025-03-17 12:22:09",
+        "points": 20,
+        "rows": [
+          1946
+        ],
+        "detail": "first login from TH"
+      }
+    ]
+  },
+  {
+    "id": "INC-0001",
+    "user": "user09",
+    "level": "High",
+    "score": 91,
+    "start": "2025-03-17 03:32:21",
+    "end": "2025-03-17 03:44:21",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (91). Without MFA change \u2192 Medium (48). Minimal evidence: {fail_then_success, anomalous_success, mfa_change}.",
+    "action": "Force password reset",
+    "signals": [
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-17 03:32:21",
+        "points": 25,
+        "rows": [
+          1845,
+          1846,
+          1847,
+          1848
+        ],
+        "detail": "3 failures, then success from PL on atk-ATK-013"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-17 03:32:21",
+        "points": 25.0,
+        "rows": [
+          1848
+        ],
+        "detail": "surprise 25.9 bits: device 6.2, hour 7.4, country 6.2, ASN 6.2"
+      },
+      {
+        "name": "new_country",
+        "stage": "Breach",
+        "time": "2025-03-17 03:32:21",
+        "points": 20,
+        "rows": [
+          1848
+        ],
+        "detail": "first login from PL"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-17 03:44:21",
+        "points": 25,
+        "rows": [
+          1849,
+          1848
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0013",
+    "user": "user19",
+    "level": "High",
+    "score": 91,
+    "start": "2025-03-17 17:25:49",
+    "end": "2025-03-17 17:29:49",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (91). Without MFA change \u2192 Medium (48). Minimal evidence: {fail_then_success, anomalous_success, mfa_change}.",
+    "action": "Force password reset",
+    "signals": [
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-17 17:25:49",
+        "points": 25,
+        "rows": [
+          2043,
+          2044,
+          2046,
+          2047
+        ],
+        "detail": "3 failures, then success from ID on atk-ATK-012"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-17 17:25:49",
+        "points": 25.0,
+        "rows": [
+          2047
+        ],
+        "detail": "surprise 25.8 bits: device 6.1, hour 7.3, country 6.1, ASN 6.1"
+      },
+      {
+        "name": "new_country",
+        "stage": "Breach",
+        "time": "2025-03-17 17:25:49",
+        "points": 20,
+        "rows": [
+          2047
+        ],
+        "detail": "first login from ID"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-17 17:29:49",
+        "points": 25,
+        "rows": [
+          2048,
+          2047
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0019",
+    "user": "user37",
+    "level": "High",
+    "score": 88,
+    "start": "2025-03-18 15:45:13",
+    "end": "2025-03-18 15:46:43",
+    "confidence": 1.0,
+    "stages": [
+      "Probe",
+      "Breach"
+    ],
+    "headline": "High (88). Without failure burst \u2192 Low (25). Without fail-then-success \u2192 Medium (45). Minimal evidence: {failure_burst, fail_then_success}.",
+    "action": "Force password reset",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-18 15:45:13",
+        "points": 45,
+        "rows": [
+          2231,
+          2232,
+          2233,
+          2234,
+          2235,
+          2236,
+          2237,
+          2238,
+          2239,
+          2240,
+          2241,
+          2242,
+          2243,
+          2244,
+          2245,
+          2246,
+          2247,
+          2248,
+          2250,
+          2251,
+          2252,
+          2253,
+          2254,
+          2255,
+          2256,
+          2257,
+          2258,
+          2259,
+          2260,
+          2261
+        ],
+        "detail": "30 failed logins, each within 10 min of the last"
+      },
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-18 15:46:43",
+        "points": 25,
+        "rows": [
+          2231,
+          2232,
+          2233,
+          2234,
+          2235,
+          2236,
+          2237,
+          2238,
+          2239,
+          2240,
+          2241,
+          2242,
+          2243,
+          2244,
+          2245,
+          2246,
+          2247,
+          2248,
+          2250,
+          2251,
+          2252,
+          2253,
+          2254,
+          2255,
+          2256,
+          2257,
+          2258,
+          2259,
+          2260,
+          2261,
+          2262
+        ],
+        "detail": "30 failures, then success from PL on atk-ATK-003"
+      }
+    ]
+  },
+  {
+    "id": "INC-0030",
+    "user": "user06",
+    "level": "High",
+    "score": 84,
+    "start": "2025-03-21 16:30:49",
+    "end": "2025-03-21 16:33:49",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (84). Without password reset \u2192 Medium (47). Without fail-then-success \u2192 Medium (67). Without anomalous success \u2192 Medium (69). Minimal evidence: {fail_then_success, anomalous_success, password_reset}.",
+    "action": "Revoke sessions",
+    "signals": [
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-21 16:30:49",
+        "points": 25,
+        "rows": [
+          2843,
+          2844,
+          2845,
+          2846,
+          2847
+        ],
+        "detail": "4 failures, then success from BD on atk-ATK-015"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-21 16:30:49",
+        "points": 23.8,
+        "rows": [
+          2847
+        ],
+        "detail": "surprise 22.7 bits: device 6.5, hour 3.3, country 6.5, ASN 6.5"
+      },
+      {
+        "name": "new_country",
+        "stage": "Breach",
+        "time": "2025-03-21 16:30:49",
+        "points": 20,
+        "rows": [
+          2847
+        ],
+        "detail": "first login from BD"
+      },
+      {
+        "name": "password_reset",
+        "stage": "Entrench",
+        "time": "2025-03-21 16:33:49",
+        "points": 20,
+        "rows": [
+          2848,
+          2847
+        ],
+        "detail": "password reset shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0026",
+    "user": "user37",
+    "level": "High",
+    "score": 77,
+    "start": "2025-03-20 17:01:15",
+    "end": "2025-03-20 17:09:15",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (77). Without MFA change \u2192 Low (36). Without fail-then-success \u2192 Medium (60). Without anomalous success \u2192 Medium (62). Minimal evidence: {fail_then_success, anomalous_success, mfa_change}.",
+    "action": "Revoke sessions",
+    "signals": [
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-20 17:01:15",
+        "points": 25,
+        "rows": [
+          2642,
+          2643,
+          2644,
+          2645
+        ],
+        "detail": "3 failures, then success from RO on atk-ATK-016"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-20 17:01:15",
+        "points": 22.8,
+        "rows": [
+          2645
+        ],
+        "detail": "surprise 21.7 bits: device 6.7, hour 3.0, country 5.4, ASN 6.7"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-20 17:09:15",
+        "points": 25,
+        "rows": [
+          2646,
+          2645
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0018",
+    "user": "user00",
+    "level": "High",
+    "score": 76,
+    "start": "2025-03-18 15:13:10",
+    "end": "2025-03-18 15:16:10",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (76). Without MFA change \u2192 Low (36). Without fail-then-success \u2192 Medium (59). Without anomalous success \u2192 Medium (62). Minimal evidence: {fail_then_success, anomalous_success, mfa_change}.",
+    "action": "Revoke sessions",
+    "signals": [
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-18 15:13:10",
+        "points": 25,
+        "rows": [
+          2218,
+          2219,
+          2220,
+          2221
+        ],
+        "detail": "3 failures, then success from TH on atk-ATK-014"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-18 15:13:10",
+        "points": 22.5,
+        "rows": [
+          2221
+        ],
+        "detail": "surprise 21.7 bits: device 6.5, hour 5.0, country 3.6, ASN 6.6"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-18 15:16:10",
+        "points": 25,
+        "rows": [
+          2222,
+          2221
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0024",
+    "user": "user33",
+    "level": "High",
+    "score": 72,
+    "start": "2025-03-20 11:58:02",
+    "end": "2025-03-20 12:01:02",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "High (72). Without recovery change \u2192 Low (32). Without fail-then-success \u2192 Medium (49). Without anomalous success \u2192 Medium (62). Minimal evidence: {fail_then_success, anomalous_success, recovery_change}.",
+    "action": "Revoke sessions",
+    "signals": [
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-20 11:58:02",
+        "points": 25,
+        "rows": [
+          2537,
+          2538,
+          2539,
+          2540,
+          2541
+        ],
+        "detail": "4 failures, then success from PL on atk-ATK-024"
+      },
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-20 11:58:02",
+        "points": 14.5,
+        "rows": [
+          2541
+        ],
+        "detail": "surprise 14.0 bits: device 6.4, hour 5.0, country 6.4, ASN 6.4 (geo discounted: VPN/known device)"
+      },
+      {
+        "name": "recovery_change",
+        "stage": "Entrench",
+        "time": "2025-03-20 12:01:02",
+        "points": 25,
+        "rows": [
+          2543,
+          2541
+        ],
+        "detail": "recovery change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0021",
+    "user": "user22",
+    "level": "Medium",
+    "score": 62,
+    "start": "2025-03-19 10:41:33",
+    "end": "2025-03-19 10:51:33",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "Medium (62). Without fail-then-success \u2192 Low (25). Without recovery change \u2192 Low (25). Minimal evidence: {fail_then_success, recovery_change}.",
+    "action": "Force re-authentication",
+    "signals": [
+      {
+        "name": "fail_then_success",
+        "stage": "Breach",
+        "time": "2025-03-19 10:41:33",
+        "points": 25,
+        "rows": [
+          2329,
+          2330,
+          2331,
+          2333
+        ],
+        "detail": "3 failures, then success from BD on atk-ATK-021"
+      },
+      {
+        "name": "recovery_change",
+        "stage": "Entrench",
+        "time": "2025-03-19 10:51:33",
+        "points": 25,
+        "rows": [
+          2338,
+          2333
+        ],
+        "detail": "recovery change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0033",
+    "user": "user46",
+    "level": "Medium",
+    "score": 62,
+    "start": "2025-03-22 17:32:20",
+    "end": "2025-03-22 17:41:20",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "Medium (62). Without MFA change \u2192 Low (24). Without anomalous success \u2192 Low (25). Minimal evidence: {anomalous_success, mfa_change}.",
+    "action": "Force re-authentication",
+    "signals": [
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-22 17:32:20",
+        "points": 24.5,
+        "rows": [
+          2962
+        ],
+        "detail": "surprise 23.5 bits: device 6.8, hour 4.3, country 5.5, ASN 6.9"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-22 17:41:20",
+        "points": 25,
+        "rows": [
+          2965,
+          2962
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0048",
+    "user": "user32",
+    "level": "Medium",
+    "score": 53,
+    "start": "2025-03-23 21:56:20",
+    "end": "2025-03-23 22:05:20",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "Medium (53). Without recovery change \u2192 Low (17). Without anomalous success \u2192 Low (25). Minimal evidence: {anomalous_success, recovery_change}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-23 21:56:20",
+        "points": 17.2,
+        "rows": [
+          3125
+        ],
+        "detail": "surprise 16.5 bits: device 6.8, hour 7.0, country 6.8, ASN 6.8 (geo discounted: VPN/known device)"
+      },
+      {
+        "name": "recovery_change",
+        "stage": "Entrench",
+        "time": "2025-03-23 22:05:20",
+        "points": 25,
+        "rows": [
+          3126,
+          3125
+        ],
+        "detail": "recovery change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0020",
+    "user": "user07",
+    "level": "Medium",
+    "score": 49,
+    "start": "2025-03-19 08:01:20",
+    "end": "2025-03-19 08:07:20",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "Medium (49). Without MFA change \u2192 Low (14). Without anomalous success \u2192 Low (25). Minimal evidence: {anomalous_success, mfa_change}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-19 08:01:20",
+        "points": 14.0,
+        "rows": [
+          2297
+        ],
+        "detail": "surprise 13.4 bits: device 6.3, hour 4.5, country 6.3, ASN 6.3 (geo discounted: VPN/known device)"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-19 08:07:20",
+        "points": 25,
+        "rows": [
+          2302,
+          2297
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0032",
+    "user": "user29",
+    "level": "Medium",
+    "score": 48,
+    "start": "2025-03-22 11:10:20",
+    "end": "2025-03-22 11:17:20",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "Medium (48). Without MFA change \u2192 Low (13). Without anomalous success \u2192 Low (25). Minimal evidence: {anomalous_success, mfa_change}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-22 11:10:20",
+        "points": 13.0,
+        "rows": [
+          2903
+        ],
+        "detail": "surprise 12.4 bits: device 6.7, hour 3.1, country 6.7, ASN 6.7 (geo discounted: VPN/known device)"
+      },
+      {
+        "name": "mfa_change",
+        "stage": "Entrench",
+        "time": "2025-03-22 11:17:20",
+        "points": 25,
+        "rows": [
+          2905,
+          2903
+        ],
+        "detail": "mfa change shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0012",
+    "user": "user48",
+    "level": "Medium",
+    "score": 45,
+    "start": "2025-03-17 13:18:17",
+    "end": "2025-03-17 13:18:17",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (45). Without failure burst \u2192 Low (0). Minimal evidence: {failure_burst}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-17 13:18:17",
+        "points": 45,
+        "rows": [
+          1971,
+          1972,
+          1973,
+          1974,
+          1975,
+          1976,
+          1977,
+          1978,
+          1979,
+          1980,
+          1981,
+          1982,
+          1983,
+          1984,
+          1985,
+          1986
+        ],
+        "detail": "16 failed logins, each within 10 min of the last"
+      }
+    ]
+  },
+  {
+    "id": "INC-0017",
+    "user": "user17",
+    "level": "Medium",
+    "score": 45,
+    "start": "2025-03-18 14:30:21",
+    "end": "2025-03-18 14:30:21",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (45). Without failure burst \u2192 Low (0). Minimal evidence: {failure_burst}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-18 14:30:21",
+        "points": 45,
+        "rows": [
+          2174,
+          2175,
+          2176,
+          2177,
+          2178,
+          2179,
+          2180,
+          2181,
+          2182,
+          2183,
+          2184,
+          2185,
+          2186,
+          2187,
+          2188,
+          2189,
+          2190,
+          2191,
+          2192,
+          2193,
+          2194,
+          2195,
+          2196,
+          2197,
+          2198,
+          2199,
+          2200,
+          2201,
+          2202
+        ],
+        "detail": "29 failed logins, each within 10 min of the last"
+      }
+    ]
+  },
+  {
+    "id": "INC-0029",
+    "user": "user18",
+    "level": "Medium",
+    "score": 45,
+    "start": "2025-03-21 16:18:13",
+    "end": "2025-03-21 16:18:13",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (45). Without failure burst \u2192 Low (0). Minimal evidence: {failure_burst}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-21 16:18:13",
+        "points": 45,
+        "rows": [
+          2818,
+          2819,
+          2820,
+          2821,
+          2822,
+          2823,
+          2824,
+          2825,
+          2826,
+          2827,
+          2828,
+          2829,
+          2830,
+          2831,
+          2832,
+          2833,
+          2835,
+          2836,
+          2837,
+          2838,
+          2839,
+          2840,
+          2841,
+          2842
+        ],
+        "detail": "24 failed logins, each within 10 min of the last"
+      }
+    ]
+  },
+  {
+    "id": "INC-0034",
+    "user": "user05",
+    "level": "Medium",
+    "score": 45,
+    "start": "2025-03-22 20:13:15",
+    "end": "2025-03-22 20:13:15",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (45). Without failure burst \u2192 Low (0). Minimal evidence: {failure_burst}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "failure_burst",
+        "stage": "Probe",
+        "time": "2025-03-22 20:13:15",
+        "points": 45,
+        "rows": [
+          2970,
+          2971,
+          2972,
+          2973,
+          2974,
+          2975,
+          2976,
+          2977,
+          2978,
+          2979,
+          2980,
+          2981,
+          2982,
+          2983,
+          2984,
+          2985,
+          2986,
+          2987,
+          2988,
+          2989,
+          2990,
+          2991
+        ],
+        "detail": "22 failed logins, each within 10 min of the last"
+      }
+    ]
+  },
+  {
+    "id": "INC-0031",
+    "user": "user24",
+    "level": "Medium",
+    "score": 43,
+    "start": "2025-03-21 19:49:20",
+    "end": "2025-03-21 19:54:20",
+    "confidence": 1.0,
+    "stages": [
+      "Breach",
+      "Entrench"
+    ],
+    "headline": "Medium (43). Without password reset \u2192 Low (14). Without anomalous success \u2192 Low (20). Minimal evidence: {anomalous_success, password_reset}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "anomalous_success",
+        "stage": "Breach",
+        "time": "2025-03-21 19:49:20",
+        "points": 14.5,
+        "rows": [
+          2869
+        ],
+        "detail": "surprise 13.9 bits: device 6.6, hour 5.8, country 4.6, ASN 2.8 (geo discounted: VPN/known device)"
+      },
+      {
+        "name": "password_reset",
+        "stage": "Entrench",
+        "time": "2025-03-21 19:54:20",
+        "points": 20,
+        "rows": [
+          2870,
+          2869
+        ],
+        "detail": "password reset shortly after a login"
+      }
+    ]
+  },
+  {
+    "id": "INC-0004",
+    "user": "user03",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:17:46",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1941
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0006",
+    "user": "user17",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:17:46",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1936
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0007",
+    "user": "user28",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:17:46",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1935
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0008",
+    "user": "user29",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:17:46",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1937
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0009",
+    "user": "user33",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:17:46",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1943
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0010",
+    "user": "user44",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:17:46",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1942
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0011",
+    "user": "user47",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-17 12:17:46",
+    "end": "2025-03-17 12:17:46",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-17 12:17:46",
+        "points": 40,
+        "rows": [
+          1938,
+          1940
+        ],
+        "detail": "IP 11.96.229.174 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0035",
+    "user": "user06",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          2992,
+          2993
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0036",
+    "user": "user07",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          2995,
+          2996
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0037",
+    "user": "user08",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          3003,
+          3004
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0038",
+    "user": "user25",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          2997
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0039",
+    "user": "user32",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          2994
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0040",
+    "user": "user36",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          2998
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0041",
+    "user": "user39",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          3001,
+          3002
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  },
+  {
+    "id": "INC-0042",
+    "user": "user43",
+    "level": "Medium",
+    "score": 40,
+    "start": "2025-03-23 01:33:07",
+    "end": "2025-03-23 01:33:07",
+    "confidence": 1.0,
+    "stages": [
+      "Probe"
+    ],
+    "headline": "Medium (40). Without password spray \u2192 Low (0). Minimal evidence: {password_spray}.",
+    "action": "Step-up MFA",
+    "signals": [
+      {
+        "name": "password_spray",
+        "stage": "Probe",
+        "time": "2025-03-23 01:33:07",
+        "points": 40,
+        "rows": [
+          2999,
+          3000
+        ],
+        "detail": "IP 18.5.22.36 failed against 8 different accounts in 15 min"
+      }
+    ]
+  }
+]
